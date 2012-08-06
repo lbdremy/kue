@@ -329,6 +329,39 @@ kue.app.set('title', 'My Application');
              "priority": "high"
            }
          }' http://localhost:3000/job
+    {"message":"job 3 created"}
+
+### POST /jobs
+
+  Create new jobs:
+
+    $ curl -H "Content-Type: application/json" -X POST -d \
+        '[
+           {
+             "type": "email",
+             "data": {
+               "title": "welcome email for tj",
+               "to": "tj@learnboost.com",
+               "template": "welcome-email"
+             },
+             "options" : {
+               "attempts": 5,
+               "priority": "high"
+             }
+           },
+           {
+             "type": "email",
+             "data": {
+               "title": "welcome email for alice",
+               "to": "alice@wonderland.com",
+               "template": "welcome-email"
+             },
+             "options" : {
+               "attempts": 5,
+               "priority": "high"
+             }
+           }
+         ]' http://localhost:3000/job
     {"message":"job 3 created"}      
 
 ## Parallel Processing With Cluster
