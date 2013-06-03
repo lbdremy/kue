@@ -1,16 +1,21 @@
 {
-    "name": "kue"
-  , "version": "0.4.0"
-  , "description": "Feature rich priority job queue backed by redis"
-  , "keywords": ["job", "queue", "worker", "redis"]
-  , "author": "TJ Holowaychuk <tj@learnboost.com>"
-  , "dependencies": {
-      "redis": "0.7.2"
-    , "express": "2.5.11"
-    , "jade": "0.27.0"
-    , "stylus": "0.28.2"
-    , "nib": "0.5.0"
-    , "reds": "0.1.4"
-  }
-  , "main": "index"
+  "name": "kue",
+  "version": "0.4.0",
+  "description": "Feature rich priority job queue backed by redis",
+  "keywords": [
+    "job",
+    "queue",
+    "worker",
+    "redis"
+  ],
+  "author": "TJ Holowaychuk <tj@learnboost.com>",
+  "dependencies": {
+    "redis": "~0.8.3",
+    "express": "2.5.11",
+    "jade": "0.27.0",
+    "stylus": "0.28.2",
+    "nib": "0.5.0",
+    "reds": "0.1.4"
+  },
+  "main": "index"
 }
